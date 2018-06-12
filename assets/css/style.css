@@ -5,12 +5,17 @@ html, body {
   width: 100%;
   font-family: "Poppins", sans-serif;
   color: #222;
-  background-color: #f3c352;
+  background-color: #01232f;
+  
+}
+.lead {
+  color: #d5d5d5;
   
 }
 
 .navbar {
   padding: 0.8rem;
+  background-color: #000 !important;
 }
 
 .navbar li {
@@ -45,20 +50,26 @@ html, body {
   padding-bottom: 1rem;
 }
 
-.btn-primary {
-  background-color: #6648b1;
-  border: 1px solid #6648b1;
+h1, h2{
+  color: #feb300;
 }
 
-.btn-primary:hover {
-  background-color: #563d7c;
-  border: 1px solid #563d7c;
+.card {
+  border: 0 solid;
 }
 
-.jumbotron {
-  padding: 1rem;
-  border-radius: 0;
+.card-header {
+  background-color: #000;
+  color: #feb300;
+}
+.card-body {
+  background-color: #e7bf60;
+}
 
+.list {
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .padding {
@@ -75,6 +86,13 @@ html, body {
   border-top: 2px solid #b4b4b4;
   width: 95%;
   margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.image hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: 1.7rem;
   margin-bottom: 1rem;
 }
 
@@ -135,7 +153,7 @@ html, body {
 }
 
 footer {
-  background-color: #3f3f3f;
+  background-color: #000;
   color: #d5d5d5;
   padding-top: 2rem;
 }
