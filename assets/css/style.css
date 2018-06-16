@@ -76,6 +76,14 @@ padding-top: 20px;
 padding-bottom: 10px;
 }
 
+.artist-img {
+  width: 100%;
+}
+.artist-img img{  
+  width: 10px;
+  height: 10px;
+}
+
 .padding {
 padding-bottom: 2rem;
 }
