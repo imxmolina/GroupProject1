@@ -23,8 +23,8 @@ $(document).ready(function () {
                 $("#song-list").append("<li>" + response.toptracks.track[i].name + " by- "+response.toptracks.track[i].artist.name+ "</li>")
             }
             
-        }).then(function(getBandsintown){
-            var queryURL = "https://rest.bandsintown.com/artists/" + metallica + "/events?app_id=codingbootcamp";
+        }).then(function(response){
+            var queryURL = "https://rest.bandsintown.com/artists/" + response.toptracks.track[1].artist.name + "/events?app_id=codingbootcamp";
             $.ajax({
                 url: queryURL,
                 method: "GET"
