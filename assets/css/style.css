@@ -101,6 +101,16 @@ margin-top: 0.3rem;
 margin-bottom: 1rem;
 }
 
+.artist-img {
+  width: 100%;
+}
+
+.artist-img img {
+  width: 10px;
+  height: 10px;
+
+}
+
 .image hr {
 border-top: 2px solid #b4b4b4;
 width: 95%;
