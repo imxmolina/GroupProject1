@@ -16,219 +16,118 @@
 </head>
 
 <body>
-
-     <!-- userbar with icon -->
-     <nav class="navbar navbar-light bg-light">
-         <span class="navbar-brand mb-0"><i class="fas fa-user fa-sm"></i></span>
-     </nav>
+<!-- userbar with icon -->
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1"><i class="fas fa-user"></i> My User</span>
+      </nav>
+       
     
-    <!-- Navigation -->
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand">
-                <h1>Music Artists</h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a href="" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Sign up</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Log In</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Carousel slider -->
-    <div id="slides" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-            <li data-target="#slides" data-slide-to="0" class="active"></li>
-            <li data-target="#slides" data-slide-to="1"></li>
-            <li data-target="#slides" data-slide-to="2"></li>
-        </ul>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/images/concert.jpg" alt="band" width="1200" height="550">
-                <div class="carousel-caption">
-                    <h1 class="display-2">Top 6 Artist</h1>
-                    <h3>A list of your top 6 artists</h3>
-                    <div class="input-group mb-3">
-                        <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                      </div>
-                    <button id="submitButton" class="btn btn-warning btn-lg userNameSubmit">Get Started</button>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/def-1200.jpg" alt="concert" width="1200" height="550">
-                <div class="carousel-caption">
-                    <h1 class="display-2">Concert Events</h1>
-                    <h3>A list of concert events</h3>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/musical-notes.jpg" alt="musical-notes" width="1200" height="550">
-                <div class="carousel-caption">
-                    <h1 class="display-2">Artist's Profile</h1>
-                    <h3>Be in the know about your artists</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-   <!-- top image and userbutton -->
-   <div id="slides" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-          <div class="carousel-item active">
-              <img src="assets/images/skynight1.jpg" alt="band" width="1200" height="350">
-              <div class="carousel-caption">
-                  <h1 class="display-2">Top 6 Artist</h1>
-                  <h3>A list of your top 6 artists</h3>
-                  <div class="input-group mb-3">
-                      <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                  <button class="btn btn-warning btn-sm userNameSubmit">Get Started</button>
+       <!-- top image and userbutton -->
+       <div id="slides" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="assets/images/skynight1.jpg" alt="band" width="1200" height="350">
+                  <div class="carousel-caption">
+                      <h1 class="display-2">Top 6 Artist</h1>
+                      <h3>A list of your top 6 artists</h3>
+                      <div class="input-group mb-3">
+                          <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                      <button class="btn btn-warning btn-sm userNameSubmit">Get Started</button>
+                  </div>
               </div>
+              
           </div>
-          
       </div>
-  </div>
-
-  <!-- three column for artist list, song tracks, concert loc -->
-  <div class="container-fluid">
-      <div class="row">
-        <div class="col text-center mr-2 bg-primary">
-          <h3>Top Artist</h3>
-          <ol id="artist-list">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-          <hr>
-          <h3>Top Tracks</h3>
-          <ol id="song-list">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-          <hr>
-          <h3>Concert Locations</h3>
-          <ul id="concert-loc" class="list-unstyled">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-
-    <!--- Cards -->
-    <div class="container-fluid padding">
-        <div class="row padding">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title text-center">Top Artists</h4>
-                    </div>
-                    <div class="card-body">
-                        <ol id="artist-list">
-                        </ol>
-                    </div>
-                </div>
+    <!--TEST-->
+      <!-- three column for artist list, song tracks, concert loc -->
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col text-center mr-2 bg-primary">
+              <h3>Top Artist</h3>
+              <ol id="artist-list">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ol>
+              <hr>
+              <h3>Top Tracks</h3>
+              <ol id="song-list">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ol>
+              <hr>
+              <h3>Concert Locations</h3>
+              <ul id="concert-loc" class="list-unstyled">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title text-center">Top Songs</h4>
-                    </div>
-                    <div class="card-body">
-                        <ol id="song-list">
-                        </ol>
-                    </div>
-                </div>
+    
+            <!-- 2 column for images -->
+            <div class="col img-display mr-2 bg-secondary">
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title text-center">Concert Locations</h4>
-                    </div>
-                    <div class="card-body">
-                        <ul id="concert-loc">
-                        </ul>
-                    </div>
-                </div>
+            <div class="col img-display bg-warning">
             </div>
-        </div>
-
-        <!-- 2 column for images -->
-        <div class="col img-display mr-2 bg-secondary">
-        </div>
-        <div class="col img-display bg-warning">
-        </div>
-      </div>
-    </div>
-
-    <!-- footer -->
-<footer>
-    <div class="container-fluid">
-      <div class="row text-center">
-        <div class="col-md-4">
-          <p>Monthly Top</p>
-          <p>Monthly Top</p>
-          <p>Monthly Top</p>
-        </div>
-        <div class="col-md-4">
-            <p>Monthly Top</p>
-            <p>Monthly Top</p>
-            <p>Monthly Top</p>
           </div>
-          <div class="col-md-4">
+        </div>
+    
+        <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+          <div class="row text-center">
+            <div class="col-md-4">
               <p>Monthly Top</p>
               <p>Monthly Top</p>
               <p>Monthly Top</p>
             </div>
-            <div class="col-lg-12">
-                <div class="col-12 social padding">
-                    <a href="#">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-google-plus-g"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-youtube"></i>
-                    </a>
+            <div class="col-md-4">
+                <p>Monthly Top</p>
+                <p>Monthly Top</p>
+                <p>Monthly Top</p>
+              </div>
+              <div class="col-md-4">
+                  <p>Monthly Top</p>
+                  <p>Monthly Top</p>
+                  <p>Monthly Top</p>
                 </div>
-                <hr class="light">
-                <p class="bottomP">&copy; top-6-artist.com</p>
-            </div>
-      </div>
-    </div>
-  </footer>
-
+                <div class="col-lg-12">
+                    <div class="col-12 social padding">
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <hr class="light">
+                    <p class="bottomP">&copy; top-6-artist.com</p>
+                </div>
+          </div>
+        </div>
+      </footer>
+    
    
 
 
