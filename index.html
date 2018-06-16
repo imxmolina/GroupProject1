@@ -17,6 +17,11 @@
 
 <body>
 
+     <!-- userbar with icon
+     <nav class="navbar navbar-light bg-light">
+         <span class="navbar-brand mb-0"><i class="fas fa-user"></i>My User</span>
+     </nav> -->
+    
     <!-- Navigation -->
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
@@ -82,19 +87,59 @@
         </div>
     </div>
 
-    <!--- Welcome Section -->
-    <div class="container-fluid padding">
-        <div class="row welcome text-center">
-            <div class="col-12">
-                <h1 class="display-4">Artist you love</h1>
-            </div>
-            <hr>
-            <div class="col-12">
-                <p class="lead">Where you can search for your favorite artist and now when they will be in your town! Where you can search
-                    for your favorite artist and now when they will be in your town!</p>
-            </div>
-        </div>
-    </div>
+   
+
+   <!-- top image and userbutton -->
+   <div id="slides" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="assets/images/skynight1.jpg" alt="band" width="1200" height="350">
+              <div class="carousel-caption">
+                  <h1 class="display-2">Top 6 Artist</h1>
+                  <h3>A list of your top 6 artists</h3>
+                  <div class="input-group mb-3">
+                      <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                  <button class="btn btn-warning btn-sm userNameSubmit">Get Started</button>
+              </div>
+          </div>
+          
+      </div>
+  </div>
+
+  <!-- three column for artist list, song tracks, concert loc -->
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col text-center mr-2 bg-primary">
+          <h3>Top Artist</h3>
+          <ol id="artist-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+          <hr>
+          <h3>Top Tracks</h3>
+          <ol id="song-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+          <hr>
+          <h3>Concert Locations</h3>
+          <ul id="concert-loc" class="list-unstyled">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
 
     <!--- Cards -->
     <div class="container-fluid padding">
@@ -133,92 +178,62 @@
                 </div>
             </div>
         </div>
-       
+
+        <!-- 2 column for images -->
+        <div class="col img-display mr-2 bg-secondary">
+        </div>
+        <div class="col img-display bg-warning">
+        </div>
+      </div>
     </div>
+
+    <!-- footer -->
+<footer>
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <p>Monthly Top</p>
+          <p>Monthly Top</p>
+          <p>Monthly Top</p>
+        </div>
+        <div class="col-md-4">
+            <p>Monthly Top</p>
+            <p>Monthly Top</p>
+            <p>Monthly Top</p>
+          </div>
+          <div class="col-md-4">
+              <p>Monthly Top</p>
+              <p>Monthly Top</p>
+              <p>Monthly Top</p>
+            </div>
+            <div class="col-lg-12">
+                <div class="col-12 social padding">
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <hr class="light">
+                <p class="bottomP">&copy; top-6-artist.com</p>
+            </div>
+      </div>
+    </div>
+  </footer>
+
    
 
-    <!-- Artist image container -->
-    <div class="container-fluid padding">
-        <div class="row image padding">
-            <div class="col-md-12">
-                <div class="card">
-                    <img src="" alt="" class="card-img-top">
-                    <div class="card-header">
-                        <h4 class="card-title text-center">Top Artist Profile</h4>
-                    </div>
-                    <div class="card-body">
-                        <p id="artProfile" class="card-text"></p>
-                        <a href="#" class="btn btn-outline-secondary">Artist Profile</a>
-                    </div>
-                </div>
-            </div>
-            <hr>
-        </div>
-    </div>
 
-    <!--- Connect -->
-    <div class="container-fluid padding">
-        <div class="row text-center padding">
-            <div class="col-12">
-                <h2>Connect</h2>
-            </div>
-            <div class="col-12 social padding">
-                <a href="#">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-google-plus-g"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-    <!--- Footer -->
-    <footer>
-        <div class="container-fluid padding">
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <hr class="light">
-                    <h5>Music Artists</h5>
-                    <hr class="light">
-                    <p>555-555-5555</p>
-                    <p>email@example.com</p>
-                    <p>100 street name</p>
-                    <p>City, State, 00000</p>
-                </div>
-                <div class="col-md-4">
-                    <hr class="light">
-                    <h5>Contact hours</h5>
-                    <hr class="light">
-                    <P>24 hours a day</P>
-                </div>
-
-                <div class="col-md-4">
-                    <hr class="light">
-                    <h5>Contact hours</h5>
-                    <hr class="light">
-                    <p>City, State, 00000</p>
-                    <p>City, State, 00000</p>
-                    <p>City, State, 00000</p>
-                    <p>City, State, 00000</p>
-                </div>
-                <div class="col-lg-12">
-                    <hr class="light">
-                    <h5>&copy; top-6-artist.com</h5>
-                </div>
-            </div>
-        </div>
-    </footer>
 
 
 
