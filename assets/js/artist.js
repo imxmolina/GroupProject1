@@ -21,7 +21,7 @@ $(document).ready(function () {
             method: "GET"
         }).then(function (response) {
             for (i = 0; i < 6; i++) {
-                $("#artist-list").append("<li class='artistName'>" + response.topartists.artist[i].name + "</li>")
+                $("#artist-list").append("<li class='artistName'><a href=''>" + response.topartists.artist[i].name + "</a></li>")
                 imgArray[i] = response.topartists.artist[i].image[4]["#text"]
                 artistArray[i] = response.topartists.artist[i].name 
             }
@@ -49,8 +49,9 @@ $(document).ready(function () {
 
     })
 
-    $("#artist-list").on("click", ".artistName", function () {
+    $("#artist-list").on("click", ".artistName", function (event) {
 
+        event.preventDefault();
         $("#imgCol0").empty();
         $("#imgCol1").empty();
 

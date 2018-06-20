@@ -2,6 +2,13 @@
     border: 1px solid #000;
 } */
 
+a{
+  color:white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .fa-user {
   margin-left: 50px;
     font-size: 20px;
