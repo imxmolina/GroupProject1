@@ -16,116 +16,112 @@
 </head>
 
 <body>
-<!-- userbar with icon -->
+    <!-- userbar with icon -->
     <!-- As a heading -->
-    <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1"><i class="fas fa-user"></i></span>
-      </nav>
-       
-    
-       <!-- top image and userbutton -->
-       <div id="slides" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img src="assets/images/skynight1.jpg" alt="band" width="1200" height="350">
-                  <div class="carousel-caption">
-                      <h1 class="display-2">Top 6 Artist</h1>
-                      <h3>A list of your top 6 artists</h3>
-                      <div class="input-group mb-3">
-                          <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                        </div>
-                      <button class="btn btn-warning btn-sm userNameSubmit" id="submitButton">Get Started</button>
-                  </div>
-              </div>
-              
-          </div>
-      </div>
-    <!--TEST-->
-      <!-- three column for artist list, song tracks, concert loc -->
-      <div class="container-fluid">
-          <div class="row">
-            <div class="col text-center mr-2 bg-primary">
-              <h3>Top Artist</h3>
-              <ol id="artist-list">
-                
-              </ol>
-              <hr>
-              <h3>Top Tracks</h3>
-              <ol id="song-list">
-               
-              </ol>
-              <hr>
-              <h3>Concert Locations</h3>
-              <ul id="concert-loc" class="list-unstyled">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-    
-            <!-- 2 column for images -->
-            <div class="col img-display mr-2 bg-secondary">
-            </div>
-            <div class="col img-display bg-warning">
-            </div>
-          </div>
-        </div>
-    
-        <!-- footer -->
-    <footer>
-        <div class="container-fluid">
-          <div class="row text-center">
-            <div class="col-md-4">
-              <p>Monthly Top</p>
-              <p>Monthly Top</p>
-              <p>Monthly Top</p>
-            </div>
-            <div class="col-md-4">
-                <p>Monthly Top</p>
-                <p>Monthly Top</p>
-                <p>Monthly Top</p>
-              </div>
-              <div class="col-md-4">
-                  <p>Monthly Top</p>
-                  <p>Monthly Top</p>
-                  <p>Monthly Top</p>
-                </div>
-                <div class="col-lg-12">
-                    <div class="col-12 social padding">
-                        <a href="#">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-google-plus-g"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <span id="idName" class="navbar-brand mb-0 h1 text-light">
+            <i class="fas fa-user"></i> Username</span>
+    </nav>
+
+
+    <!-- top image and userbutton -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/skynight1.jpg" alt="band" width="1200" height="350">
+                <div class="carousel-caption">
+                    <h1>Top 6 Artist</h1>
+                    <h3>A list of your top 6 artists</h3>
+                    <div class="input-group mb-3">
+                        <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
-                    <hr class="light">
-                    <p class="bottomP">&copy; top-6-artist.com</p>
+                    <button class="btn btn-warning btn-sm userNameSubmit" id="submitButton">Get Started</button>
                 </div>
-          </div>
+            </div>
+
         </div>
-      </footer>
-    
-   
+    </div>
+    <!--TEST-->
+    <!-- three column for artist list, song tracks, concert loc -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mr-2 bg-primary">
+                <h3>Top Artist</h3>
+                <ul id="artist-list">
+                </ul>
+                <hr>
+                <h3>Top Tracks</h3>
+                <ul id="song-list">
+                </ul>
+                <hr>
+                <h3>Concert Locations</h3>
+                <ul id="concert-loc" class="list-unstyled">
+                </ul>
+            </div>
+
+            <!-- 2 column for images -->
+            <div class="col img-display bg-secondary">
+                <div class="row">
+                    <div id="imgCol0" class="col-lg-6">
+                    </div>
+                    <div id="imgCol1" class="col-lg-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <p>Monthly Top</p>
+                        <p>Monthly Top</p>
+                        <p>Monthly Top</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Monthly Top</p>
+                        <p>Monthly Top</p>
+                        <p>Monthly Top</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Monthly Top</p>
+                        <p>Monthly Top</p>
+                        <p>Monthly Top</p>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="col-12 social padding">
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <hr class="light">
+                        <p class="bottomP">&copy; top-6-artist.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
 
 
 
 
-    <script src="assets/js/artist.js"></script>
+
+
+        <script src="assets/js/artist.js"></script>
 </body>
 
 </html>
