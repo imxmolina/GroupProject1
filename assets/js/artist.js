@@ -62,6 +62,10 @@ $(document).ready(function () {
         }
     })
 
+    $("#artist-list").on("hover", ".artistName", function(){
+        console.log("Bi")
+    })
+
     $("#song-list").on("click", ".songName", function () {
 
     })
