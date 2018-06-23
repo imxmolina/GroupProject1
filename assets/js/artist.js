@@ -52,9 +52,12 @@ $(document).ready(function () {
         }
 
 
-        var artistURL = "http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=" + userName + "&limit=6&period=7day&api_key=322352869f97292d72744a0a62a42120&format=json";
-        var songURL = "http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=" + userName + "&limit=6&period=7day&api_key=322352869f97292d72744a0a62a42120&format=json";
-        var picURL = "http://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=" + userName + "&api_key=322352869f97292d72744a0a62a42120&format=json";
+
+        var artistURL = "https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=" + userName + "&limit=6&period=7day&api_key=322352869f97292d72744a0a62a42120&format=json";
+        var songURL = "https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=" + userName + "&limit=6&period=7day&api_key=322352869f97292d72744a0a62a42120&format=json";
+        var picURL = "https://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=" + userName + "&api_key=322352869f97292d72744a0a62a42120&format=json";
+
+     
 
         $.ajax({
             url: picURL,
