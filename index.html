@@ -8,9 +8,11 @@
 
     <title>Music Artist &amp; Concert Locations</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
@@ -20,107 +22,78 @@
     <!-- As a heading -->
 
     <nav class="navbar navbar-light bg-light">
-        <span id="idName" class="navbar-brand mb-0 h1 text-white"><i class="fas fa-user"></i></span>
-      </nav>
-       
-       <!-- top image and userbutton -->
-       <div id="slides" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img src="assets/images/skynight1.jpg" alt="band" width="1200" height="350">
-                  <div class="carousel-caption">
-                      <h1 class="display-2">Top 6 Artist</h1>
-                      <h3>A list of your top 6 artists</h3>
-                      <div class="input-group mb-3">
-                          <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                        </div>
-                      <button class="btn btn-warning btn-sm userNameSubmit" id="submitButton">Get Started</button>
-                  </div>
-              </div>
-              
-          </div>
-      </div>
+
+    </nav>
+
+    <!-- top image and userbutton -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/Orange Coral.jpg" alt="band" width="1200" height="350">
+                <div class="carousel-caption">
+                    <h1 class="display-2">Weekly Review</h1>
+                    <h3>personalized music report</h3>
+                    <div class="input-group mb-3">
+                        <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <button class="btn userNameSubmit" id="submitButton">Get Started</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <!--TEST-->
     <!-- three column for artist list, song tracks, concert loc -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="newsletter" hidden>
+        <span id="topHeader">
+            <h1 id="newsHeading">Your Weekly Report</h1>
+            <div id="idName" class="navbar-brand mb-0 h1 text-black" align="center"></div>
+        </span>
         <div class="row">
-            <div class="col text-center mr-2 bg-primary">
-                <h3>Top Artist</h3>
-                <ul id="artist-list">
-                </ul>
-                <hr>
-                <h3>Top Tracks</h3>
+
+            <div class="col text-center mr-2 bg-primary" id="wordWell">
+
+                <h2>Top Tracks</h2>
                 <ul id="song-list">
                 </ul>
                 <hr>
-                <h3>Concert Locations</h3>
-                <ul id="concert-loc" class="list-unstyled">
-                </ul>
+
+
+                <div id="youtubeDiv">
+                    <h1 id="youtube1">Your #1 Track</h1>
+                    <span id="youtubeDump"></span>
+                </div>
+                <div id="youtubeDiv">
+                    <span id="youtubeDump2"></span>
+                </div>
+
 
             </div>
 
             <!-- 2 column for images -->
-            <div class="col img-display bg-secondary">
+            <div class="col img-display" id="picWell">
+                <div class="col text-center mr-2">
+
+                    <h2>Top Artists</h2>
+                </div>
                 <div class="row">
                     <div id="imgCol0" class="col-lg-6">
                     </div>
                     <div id="imgCol1" class="col-lg-6">
                     </div>
                 </div>
+                <h2>Upcoming Shows</h2>
+                <ul id="concert-loc" class="list-unstyled">
+                </ul>
             </div>
+
         </div>
 
-        <!-- footer -->
-        <footer>
-            <div class="container-fluid">
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <p>Monthly Top</p>
-                        <p>Monthly Top</p>
-                        <p>Monthly Top</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p>Monthly Top</p>
-                        <p>Monthly Top</p>
-                        <p>Monthly Top</p>
-                    </div>
-                    <div class="col-md-4">
-                        <p>Monthly Top</p>
-                        <p>Monthly Top</p>
-                        <p>Monthly Top</p>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="col-12 social padding">
-                            <a href="#">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-google-plus-g"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                        <hr class="light">
-                        <p class="bottomP">&copy; top-6-artist.com</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
 
 
 
 
-
-
-
-
+        <script src="https://www.youtube.com/iframe_api"></script>
         <script src="assets/js/artist.js"></script>
 </body>
 
